@@ -1,4 +1,4 @@
-package Solutions;
+package Solutions.Arrays;
 
 public class Leetcode1470 {
     class Solution {
