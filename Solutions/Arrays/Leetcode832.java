@@ -1,3 +1,5 @@
+package Solutions.Arrays;
+
 public class Leetcode832 {
     class Solution {
     public int[][] flipAndInvertImage(int[][] image) {
