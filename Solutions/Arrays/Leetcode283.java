@@ -7,15 +7,13 @@ public class Leetcode283 {
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
+                int temp = nums[index];
                 nums[index] = nums[i];
+                nums[i] = temp;
                 index = index + 1;
             }
         }
 
-        while (index < nums.length) {
-            nums[index] = 0;
-            index = index + 1;
-        }
     }
 }
 }
