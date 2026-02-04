@@ -1,3 +1,5 @@
+package Solutions.Arrays;
+
 public class Leetcode1004 {
     class Solution {
     public int longestOnes(int[] nums, int k) {
