@@ -1,3 +1,5 @@
+package Solutions.Arrays;
+
 public class Leetcode59 {
     class Solution {
     public int[][] generateMatrix(int n) {
