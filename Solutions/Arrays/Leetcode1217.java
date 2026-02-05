@@ -1,3 +1,5 @@
+package Solutions.Arrays;
+
 public class Leetcode1217 {
     class Solution {
     public int minCostToMoveChips(int[] position) {
