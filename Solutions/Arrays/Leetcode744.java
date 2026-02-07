@@ -1,3 +1,5 @@
+package Solutions.Arrays;
+
 public class Leetcode744 {
     class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
