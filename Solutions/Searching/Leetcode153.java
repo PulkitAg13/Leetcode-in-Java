@@ -13,7 +13,7 @@ public class Leetcode153 {
             if (mid < nums.length-1 && nums[mid] > nums[mid + 1]) return nums[mid + 1];
 
             // Check if left part is sorted
-            if (nums[mid] >= nums[start]) {
+            if (nums[mid] > nums[end]) {
                 start = mid + 1;
             } 
             // Right part is sorted
