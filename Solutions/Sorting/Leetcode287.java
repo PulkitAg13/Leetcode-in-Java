@@ -13,15 +13,8 @@ public class Leetcode287 {
             }
         }
 
-        // search for first duplicate number
-        for (int index = 0; index < arr.length; index++) {
-            if (arr[index] != index + 1) {
-                return arr[index];
-            }
-        }
-
-        // case 2
-        return arr.length;
+        // duplicate number will always be at last
+        return arr[arr.length-1];
     }
 
     public void swap(int[] arr, int first, int second) {
