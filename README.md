@@ -3,7 +3,6 @@
 Welcome to my **LeetCode Java Solutions** repository!
 This repository is a **daily log of my problem-solving journey on LeetCode**, where I solve problems using **Java** with a focus on **clarity, logic, and consistency**.
 
-
 ---
 
 ## ✨ What’s Inside?
