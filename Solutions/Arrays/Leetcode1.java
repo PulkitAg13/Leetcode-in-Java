@@ -17,3 +17,4 @@ public class Leetcode1 {
     }
 }
 }
+
