@@ -35,3 +35,42 @@ public class Leetcode888 {
     }
 }
 }
+// Solution 2
+/*import java.util.Arrays;
+
+class Solution {
+    public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
+        int sumAlice = 0;
+        int sumBob = 0;
+
+        for (int candy : aliceSizes) {
+            sumAlice += candy;
+        }
+
+        for (int candy : bobSizes) {
+            sumBob += candy;
+        }
+
+        Arrays.sort(aliceSizes);
+        Arrays.sort(bobSizes);
+
+        int delta = (sumBob - sumAlice) / 2;
+
+        int i = 0;
+        int j = 0;
+
+        while (i < aliceSizes.length && j < bobSizes.length) {
+            int diff = bobSizes[j] - aliceSizes[i];
+
+            if (diff == delta) {
+                return new int[]{aliceSizes[i], bobSizes[j]};
+            } else if (diff < delta) {
+                j++;
+            } else {
+                i++;
+            }
+        }
+
+        return new int[0];
+    }
+}*/
