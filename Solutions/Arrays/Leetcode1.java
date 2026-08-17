@@ -1,5 +1,4 @@
 package Solutions.Arrays;
-
 public class Leetcode1 {
     class Solution {
     public int[] twoSum(int[] nums, int target) {
