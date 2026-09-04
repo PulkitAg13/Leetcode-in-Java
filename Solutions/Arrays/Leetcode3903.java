@@ -1,19 +1,26 @@
+
 class Solution {
-    public boolean uniformArray(int[] nums1) {
-        boolean odd = true;
-        int min = nums1[0];
-        for (int i = 0; i < nums1.length; i++) {
-            if (nums1[i] < min) {
-                 min = nums1[i];
+    public int firstStableIndex(int[] nums, int k) {
+        int[] max = new int[nums.length];
+        int[] min = new int[nums.length];
+        int max_value = Integer.MIN_VALUE;
+        int min_value = Integer.MAX_VALUE;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] > max_value){
+                max_value = nums[i];
             }
-            if(nums1[i] % 2 == 1){
-                odd = false;
+            if(nums[nums.length-i-1] < min_value){
+                min_value = nums[nums.length-i-1];
+            }
+            max[i] = max_value;
+            min[nums.length-i-1] = min_value;
+        }
+        for(int i = 0; i < nums.length; i++){
+            if(max[i] - min[i] <= k){
+                return i;
             }
         }
-        if(min % 2 == 1){
-            return true;
-        }else{
-            return odd;
-        }
+        return -1;
     }
 }
+
